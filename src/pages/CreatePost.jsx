@@ -17,7 +17,7 @@ export default function Createpost(){
         data.set('content', content);
         data.set('file', files[0]);
         ev.preventDefault();
-        fetch('http://localhost:4000/post', {
+        fetch('https://MERN-blog-site-api.onrender.com/post', {
             method: 'POST',
             body: data,
             credentials: 'include',
