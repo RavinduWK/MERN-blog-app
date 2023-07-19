@@ -28,7 +28,7 @@ export default function Header() {
         <div className="navbar">
             <header>
             <Link to="/" className="logo">
-            Wickram Blogs
+            My Blogs
             </Link>
             <nav>
                 {username && (
