@@ -17,7 +17,7 @@ export default function Createpost(){
         data.set('content', content);
         data.set('file', files[0]);
         ev.preventDefault();
-        fetch('https://wickramblogs-api.onrender.com//post', {
+        fetch('https://wickramblogs-api.onrender.com/post', {
             method: 'POST',
             body: data,
             credentials: 'include',
