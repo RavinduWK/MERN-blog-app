@@ -6,7 +6,7 @@ export default function Post({_id, title, summary, cover, content, createdAt, au
         <div className="post">
             <div className="image">
                 <Link to={`/post/${_id}`}>
-                    <img src={"https://wickramblogs-api.onrender.com//"+cover} />
+                    <img src={"https://wickramblogs-api.onrender.com/"+cover} />
                 </Link>
             </div>
             <div className="texts">
