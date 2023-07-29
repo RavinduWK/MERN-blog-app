@@ -9,7 +9,7 @@ export default function PostPage() {
     const { id } = useParams();
 
     useEffect(() => {
-        fetch(`https://MERN-blog-site-api.onrender.com/post/${id}`)
+        fetch(`https://wickramBlogs-api.onrender.com/post/${id}`)
             .then(response => {
                 response.json().then(postInfo => {
                     setPostInfo(postInfo);
@@ -39,7 +39,7 @@ export default function PostPage() {
             )}
 
             <div className="image">
-                <img src={`https://MERN-blog-site-api.onrender.com/${postInfo.cover}`} alt="" />
+                <img src={`https://wickramBlogs-api.onrender.com/${postInfo.cover}`} alt="" />
             </div>
         
             

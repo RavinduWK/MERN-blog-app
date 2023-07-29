@@ -14,7 +14,7 @@ export default function LoginPage() {
 
   async function login(ev) {
     ev.preventDefault();
-    const response = await fetch("https://MERN-blog-site-api.onrender.com/login", {
+    const response = await fetch("https://wickramBlogs-api.onrender.com/login", {
       method: 'POST',
       body: JSON.stringify({ username, password }),
       headers: { 'Content-Type': 'application/json' },
