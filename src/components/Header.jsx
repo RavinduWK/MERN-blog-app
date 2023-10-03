@@ -5,7 +5,7 @@ import { UserContext } from "../UserContext";
 export default function Header() {
     const {setUserInfo, userInfo} = useContext(UserContext);
     useEffect(() => {
-        fetch("https://wickramblogs-api.onrender.com/profile", {
+        fetch("http://localhost:4000/profile", {
             credentials: 'include',
         }).then(response => {
             response.json().then(userInfo=> {
@@ -15,7 +15,7 @@ export default function Header() {
     }, []);
 
     function logout() {
-        fetch("https://wickramblogs-api.onrender.com/logout", {
+        fetch("http://localhost:4000/logout", {
             credentials: 'include',
             method: 'POST',
         });
@@ -28,7 +28,7 @@ export default function Header() {
         <div className="navbar">
             <header>
             <Link to="/" className="logo">
-            My Blogs
+            Wickram Blogs
             </Link>
             <nav>
                 {username && (
