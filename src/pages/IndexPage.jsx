@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Post from "../components/Post";
 
 export default function IndexPage() {
-  const API_URL = process.env.REACT_APP_API_URL || "http://localhost:4000";
+  const API_URL = process.env.REACT_APP_API_URL;
 
   const [posts, setPosts] = useState([]);
   useEffect(() => {

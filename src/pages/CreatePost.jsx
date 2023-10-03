@@ -8,7 +8,7 @@ export default function Createpost() {
   const [content, setContent] = useState("");
   const [files, setFiles] = useState("");
   const [redirect, setRedirect] = useState(false);
-  const API_URL = process.env.REACT_APP_API_URL || "http://localhost:4000";
+  const API_URL = process.env.REACT_APP_API_URL;
 
   function createNewPost(ev) {
     const data = new FormData();

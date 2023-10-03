@@ -7,7 +7,7 @@ import bg from "../assets/bg.png";
 export default function RegisterPage() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const API_URL = process.env.REACT_APP_API_URL || "http://localhost:4000";
+  const API_URL = process.env.REACT_APP_API_URL;
 
   async function register(ev) {
     ev.preventDefault();

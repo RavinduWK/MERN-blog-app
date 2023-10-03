@@ -9,7 +9,7 @@ export default function EditPost() {
   const [content, setContent] = useState("");
   const [files, setFiles] = useState("");
   const [redirect, setRedirect] = useState(false);
-  const API_URL = process.env.REACT_APP_API_URL || "http://localhost:4000";
+  const API_URL = process.env.REACT_APP_API_URL;
 
   useEffect(() => {
     fetch(`${API_URL}/post/` + id).then((response) => {
