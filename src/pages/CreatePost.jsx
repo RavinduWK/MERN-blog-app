@@ -21,11 +21,22 @@ export default function Createpost() {
       method: "POST",
       body: data,
       credentials: "include",
-    }).then((response) => {
-      if (response.ok) {
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json();
+      })
+      .then((data) => {
         setRedirect(true);
-      }
-    });
+      })
+      .catch((error) => {
+        console.error(
+          "There was a problem with the fetch operation:",
+          error.message
+        );
+      });
   }
 
   if (redirect) {
