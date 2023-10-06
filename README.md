@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Word Wind Blog App (MERN Stack)
+![Mockup](https://github.com/RavinduWK/MERN-blog-app/blob/main/public/word-wind.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
 
-## Available Scripts
+This MERN (MongoDB, Express.js, React, Node.js) blog application allows multiple users to create and manage their blog posts. All posts are publicly visible, and each user can edit their own posts. Additionally, users can add images to their blog posts to enhance their content.
 
-In the project directory, you can run:
+### Key Features
 
-### `npm start`
+- **User Authentication**: Users can sign up, log in, and manage their accounts.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Create and Edit Posts**: Users can create new blog posts and edit their existing posts.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Publicly Visible Posts**: All blog posts are publicly visible to anyone visiting the website.
 
-### `npm test`
+- **Image Upload**: Users can upload images to include in their blog posts.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation and Setup
 
-### `npm run build`
+To set up the MERN Blog App, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone this repository to your local machine:
+## Installation and Setup
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To set up the Post-office MIS system, please follow these steps:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone this repository to your local machine:
+   
+2. Navigate to the server folder and install server dependencies:
 
-### `npm run eject`
+3. Navigate to the client folder and install client dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Configure the environment variables in the server and client as needed, including database connection details, JWT secret, and cloud storage configuration for image uploads.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. Start the server:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+6. Start the client:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Usage
 
-## Learn More
+1. Register a new user account or log in with an existing account.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Once logged in, you can create a new blog post by clicking on the "Create Post" button.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Fill in the post details, including title, content, and optionally, upload an image.
 
-### Code Splitting
+4. Click "Publish" to create the blog post.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5. You can view and edit your own posts by navigating to the "My Posts" section.
 
-### Analyzing the Bundle Size
+## Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- MongoDB: Database for storing user accounts, blog posts, and images.
+- Express.js: Backend framework for handling API requests and authentication.
+- React: Frontend framework for building the user interface.
+- Node.js: Server runtime for running the backend application.
+- JWT (JSON Web Tokens): Used for user authentication and authorization.
+- Cloud Storage (e.g., Amazon S3): Used for storing uploaded images.
+- HTML/CSS: For structuring and styling the user interface.
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank You.
