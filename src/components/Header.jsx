@@ -1,3 +1,4 @@
+import "dotenv/config";
 import { Link } from "react-router-dom";
 import { useContext, useEffect, useState } from "react";
 import { UserContext } from "../UserContext";
