@@ -4,6 +4,9 @@ on:
   push:
     branches: ["azure-deployment"]
 
+env:
+  CI: false
+
 permissions:
   pages: write
   id-token: write
