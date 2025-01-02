@@ -1,4 +1,3 @@
-import "dotenv/config";
 import { useContext, useState } from "react";
 import { Navigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
