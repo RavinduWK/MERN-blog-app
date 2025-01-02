@@ -8,6 +8,7 @@ export default function RegisterPage() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const API_URL = process.env.REACT_APP_API_URL;
+  console.log("a", API_URL);
 
   async function register(ev) {
     ev.preventDefault();
